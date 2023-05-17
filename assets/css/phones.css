@@ -17,11 +17,9 @@
         background-color: var(--footer-arena);
         background-repeat: no-repeat;
         background-size: contain;
-        animation: bounce 1s ease-in-out 1;
         flex-wrap: wrap;
         background-position: center;
         flex-direction: column;
-        transition: transform 0.3s ease;
     }
     .fondo1, .fondo2 > h1 {
         color: black;
@@ -117,16 +115,5 @@
   #myButton:hover {
     background-color: var(--header-azul); 
   }
-}
-
-
-
-
-
-.fondo1:hover {
-  transform: scale(1.2);
-}
-.fondo2:hover {
-  transform: scale(1.2);
 }
 

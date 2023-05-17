@@ -80,7 +80,7 @@ ul{
 }   
 .fondo2{
     background-image: url(../media/img/travel2.png);  
-    transition: transform 0.3s ease;  
+     
     background-repeat: no-repeat;
     background-size: contain;
     height: 150px;
@@ -88,17 +88,10 @@ ul{
     animation: bounce 1s ease-in-out 1;
     background-color: var(--select-azul);
 }
-.fondo1:hover {
-    transform: scale(1.2);
-}
-.fondo2:hover {
-    transform: scale(1.2);
-}
 .fondo1 {
     background-image: url(../media/img/travel.png);
     background-repeat: no-repeat;
     background-size: contain;
-    transition: transform 0.3s ease; 
     height: 150px;
     background-position: center;
     animation: bounce 1s ease-in-out 1;
@@ -128,21 +121,19 @@ ul{
     display: flex;
     background-color: var(--menu-azul);
     text-align: center;
-    animation: bounce 1s ease-in-out 1; 
-    
+    animation: bounce 1s ease-in-out 1;  
 }
 .enlace:hover {
     z-index: 1;
     
-    /*box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);*/
-    background-size: auto;
+    transform: scale(1.2);
 }
 .enlace > a {
     border-radius: 5px;
     box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
     background-color: var(--footer-arena);
-     
-    background-size: 80px;
+    transition: transform 0.3s ease; 
+    background-size: contain;
 }
 
 /*---------API--------*/
@@ -169,3 +160,4 @@ ul{
 .containerAPI {
     justify-content: center;
 }
+
