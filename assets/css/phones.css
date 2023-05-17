@@ -1,0 +1,119 @@
+/* media queries */ 
+@media screen and (max-width: 768px) { 
+    
+    /* diseño a una sola columna */ 
+    .containerP {
+        display: flex;
+        flex-direction: column;
+    }
+/* diseño  */ 
+.presentacion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .fondo1, .fondo2 {
+        background-color: var(--footer-arena);
+        background-repeat: no-repeat;
+        background-size: contain;
+        animation: bounce 1s ease-in-out 1;
+        flex-wrap: wrap;
+        background-position: center;
+        flex-direction: column;
+    }
+    .fondo1, .fondo2 > h1 {
+        color: black;
+    }
+
+    #myButton {
+      display: none;
+    }
+    .footer-bg {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    .containerP {
+    background-color: var(--header-azul);
+
+}
+    .presentacion {
+   
+    position: relative;
+    width: calc(var(--sise-root));
+    background-color: var(--menu-azul);
+    padding: 50px;   
+    
+}
+}
+}
+
+/*---MENU HAMBURGUESA */
+.menu {
+    background-color: var(--footer-arena);  
+  }
+  
+  .menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .menu-list li {
+    float: left;
+  }
+  
+  .menu-list li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .menu-button {
+    display: none;
+    color: white;
+    font-size: 20px;
+    padding: 14px 16px;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu-list li {
+      float: none;
+      display: block;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .menu-list {
+      display: none;
+    }
+  
+    .menu-list.responsive {
+      display: block;
+    }
+    
+  }
+ 
+/*---INTENTO DE BOTON RESPONSIVO PARA CONSULTAR EL CLIMA---*/
+@media screen and (max-width: 768px) {
+  #myButton {
+    background-color: var(--footer-arena);  
+    color: black; 
+    border-radius: 10px;
+    cursor: pointer; 
+    font-family: 'La Belle Aurore', cursive;
+
+}
+
+  #myButton:hover {
+    background-color: var(--header-azul); 
+  }
+}
