@@ -14,7 +14,6 @@ $midnight-green: rgba(7, 59, 76, 1);
     --footer-arena:rgba(255, 209, 102, .8);
 
     --sise-root: 10vh;
-
 }
 body{
     background-color: var(--fondo-arena);
