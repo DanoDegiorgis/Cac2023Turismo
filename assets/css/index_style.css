@@ -22,12 +22,6 @@ ul{
     text-decoration: none;
     color: black;
 }
-.nav-header ul li:hover{
-    z-index: 1;
-    background-color:  rgba(17, 138, 178, 1);
-    box-shadow: 8px 10px 8px rgba(12, 100, 129, 0.986);
-
-}
 .container{
     width: 153px;
     height: 188px;
@@ -86,7 +80,8 @@ ul{
 }   
 
 .fondo2{
-    background-image: url(../media/img/travel2.png);    
+    background-image: url(../media/img/travel2.png);  
+    transition: transform 0.3s ease;  
     background-repeat: no-repeat;
     background-size: contain;
     height: 150px;
@@ -94,10 +89,17 @@ ul{
     animation: bounce 1s ease-in-out 1;
     background-color: var(--select-azul);
 }
+.fondo1:hover {
+    transform: scale(1.2);
+}
+.fondo2:hover {
+    transform: scale(1.2);
+}
 .fondo1 {
     background-image: url(../media/img/travel.png);
     background-repeat: no-repeat;
     background-size: contain;
+    transition: transform 0.3s ease; 
     height: 150px;
     background-position: center;
     animation: bounce 1s ease-in-out 1;
@@ -156,8 +158,16 @@ ul{
 
 }
 
-  #myButton:hover {
-    background-color: var(--header-azul); 
-  }
 
+#pron, #demo, #city, #temp, #humidity {
+    text-decoration: underline;
+    width:auto;
+    color: black;
+    justify-content: center;
+    font-family: 'La Belle Aurore', cursive;
+    
+}
 
+.containerAPI {
+    justify-content: center;
+}
